@@ -6,7 +6,7 @@ This repo contains a model trained on the **I**nternational Corpus of **Ja**pane
 ## Limitations
 This model is limited by amount of data (n<10000), as well as the classification of data into difficulty levels. I based my classification of difficulty on quantitative scores of the J-CAT and SPOT, but these scores are not fully representative of the proficiency a learner is at. Furthermore, there is a large disparity in the number of advanced, intermediate, and beginner/introductory learners in the data set.
   
-Due to the limited amount of data, I opted to use **k-fold cross validation** with a k = 4 segmentation. The k-fold program is taken from [here](https://github.com/explosion/projects/blob/v3/tutorials/parser_low_resource/scripts/kfold.py)
+Due to the limited amount of data, I opted to use **k-fold cross validation** with a k = 10 segmentation, instead of a train/test split. The k-fold program is modified from [here](https://github.com/explosion/projects/blob/v3/tutorials/parser_low_resource/scripts/kfold.py)
 ## Evaluation
 The output of training with a learning rate of .001 using train/div:
 ```
