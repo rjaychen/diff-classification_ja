@@ -8,7 +8,7 @@ This model is limited by amount of data (n<10000), as well as the classification
   
 Due to the limited amount of data, I opted to use **k-fold cross validation** with a k = 4 segmentation. The k-fold program is taken from [here](https://github.com/explosion/projects/blob/v3/tutorials/parser_low_resource/scripts/kfold.py)
 ## Evaluation
-The output of training with a learning rate of .001:
+The output of training with a learning rate of .001 using train/div:
 ```
 E    #       LOSS TEXTC...  CATS_SCORE  SCORE
 ---  ------  -------------  ----------  ------
@@ -30,6 +30,7 @@ E    #       LOSS TEXTC...  CATS_SCORE  SCORE
   2    3000          22.74       65.70    0.66
 
 ```
+The output of training with k-folds:
 ## Usage
 ### Training the Model
 You can download the spacy model used in training my model through the following steps:
