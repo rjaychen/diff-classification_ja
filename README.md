@@ -44,4 +44,5 @@ python -m spacy download "ja_core_news_lg"
 A requirements.txt is also provided for package installation. 
 ### Web Scraping
 ## Examples
+Let's source some unseen texts from [tadoku](https://tadoku.org/japanese/en/free-books-en/), a website with free online japanese texts with difficulty ratings L1 - L5.  
 
