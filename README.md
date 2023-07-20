@@ -7,7 +7,11 @@ This model is limited by amount of data, as well as the classification of data i
 ## Usage
 You can download the spacy model used in training my model through the following steps:
 1. Install spacy
-    pip install spacy
+```
+pip install spacy
+```
 2. Install the model
+```
     python -m spacy download "ja_core_news_lg"
+```
 A requirements.txt is also provided for package installation. 
