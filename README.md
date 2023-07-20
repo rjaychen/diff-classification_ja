@@ -61,3 +61,10 @@ print(easy_doc.cats)
 print('Hard:')
 print(hard_doc.cats)
 ```
+Output:
+```
+Easy:
+{'introductory': 0.43379276990890503, 'beginner': 0.3282627463340759, 'intermediate': 0.5436066389083862, 'advanced': 0.43734145164489746}
+Hard:
+{'introductory': 0.32471826672554016, 'beginner': 0.34468939900398254, 'intermediate': 0.5013184547424316, 'advanced': 0.4545688331127167}
+```
