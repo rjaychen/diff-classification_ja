@@ -4,7 +4,7 @@ Personal research/learning project of mine - Ryan
 ## Description
 This repo contains a model trained on the **I**nternational Corpus of **Ja**panese as a **S**econd Language (I-JAS) dataset found [[here]](https://chunagon.ninjal.ac.jp) [[alternative]](https://www2.ninjal.ac.jp/jll/lsaj/), a corpus of data collected from cross-sectional surveys of the spoken and written language of 1,000 Japanese learners speaking 12 different languages ​​in 20 countries and regions including Japan. Students were given two Japanese proficiency tests to determine their level; the [J-CAT](https://www.waseda.jp/inst/cjl/assets/uploads/2018/02/jcat_manual.pdf) and the [SPOT](https://ttbj.cegloc.tsukuba.ac.jp/en/p1.html#pageLink02).  
 ## Limitations
-This model is limited by amount of data (n<10000), as well as the classification of data into difficulty levels. I based my classification of difficulty on quantitative scores of the J-CAT and SPOT, but these scores are not fully representative of the proficiency a learner is at.  
+This model is limited by amount of data (n<10000), as well as the classification of data into difficulty levels. I based my classification of difficulty on quantitative scores of the J-CAT and SPOT, but these scores are not fully representative of the proficiency a learner is at. Furthermore, there is a large disparity in the number of advanced, intermediate, and beginner/introductory learners in the data set.
   
 Due to the limited amount of data, I opted to use **k-fold cross validation** with a k = 4 segmentation. The k-fold program is taken from [here](https://github.com/explosion/projects/blob/v3/tutorials/parser_low_resource/scripts/kfold.py)
 ## Evaluation
@@ -44,5 +44,5 @@ python -m spacy download "ja_core_news_lg"
 A requirements.txt is also provided for package installation. 
 ### Web Scraping
 ## Examples
-Let's source some unseen texts from [tadoku](https://tadoku.org/japanese/en/free-books-en/), a website with free online japanese texts with difficulty ratings L1 - L5.  
-
+Let's source some unseen texts from [TADOKU](https://tadoku.org/japanese/en/free-books-en/), a website with free online japanese texts with difficulty ratings L1 - L5.  
+[[Text - L0]](https://tadoku.org/japanese/book/5370/) [[Text - L5]](https://tadoku.org/japanese/book/6238/)
