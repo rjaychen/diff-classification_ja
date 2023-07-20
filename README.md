@@ -45,4 +45,19 @@ A requirements.txt is also provided for package installation.
 ### Web Scraping
 ## Examples
 Let's source some unseen texts from [TADOKU](https://tadoku.org/japanese/en/free-books-en/), a website with free online japanese texts with difficulty ratings L1 - L5.  
-[[Text - L0]](https://tadoku.org/japanese/book/5370/) [[Text - L5]](https://tadoku.org/japanese/book/6238/)
+[[Text - L1]](https://tadoku.org/japanese/book/7348/) [[Text - L5]](https://tadoku.org/japanese/book/6238/)
+```
+easy_text = '森の中に、うさぎの家族がいます。お母さんと、四匹の子うさぎです。'\
+            '朝です。こどもたちは、そこであそびます。お母さんが言いました。'
+
+hard_text = '今年も、もうすぐクリスマス。駅 前 の通りは、イルミネーションがキラキラと 輝 いている。歩'\
+            'いている人たちの顔も楽しそうだ。美知子は高校のクラス会に向かっていた'
+
+nlp = spacy.load("output/model-best")
+easy_doc = nlp(easy_text)
+hard_doc = nlp(hard_text)
+print('Easy:')
+print(easy_doc.cats)
+print('Hard:')
+print(hard_doc.cats)
+```
