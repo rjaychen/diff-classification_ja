@@ -4,7 +4,7 @@ Personal research/learning project of mine - Ryan
 ## Description
 This repo contains a model trained on the **I**nternational Corpus of **Ja**panese as a **S**econd Language (I-JAS) dataset found [[here]](https://chunagon.ninjal.ac.jp) [[alternative]](https://www2.ninjal.ac.jp/jll/lsaj/), a corpus of data collected from cross-sectional surveys of the spoken and written language of 1,000 Japanese learners speaking 12 different languages ​​in 20 countries and regions including Japan. Students were given two Japanese proficiency tests to determine their level; the [J-CAT](https://www.waseda.jp/inst/cjl/assets/uploads/2018/02/jcat_manual.pdf) and the [SPOT](https://ttbj.cegloc.tsukuba.ac.jp/en/p1.html#pageLink02).  
 
-Note that I can not provide the data used in the creation of this model, but it can be requested from the links above.  
+**Note that I can not provide the data used in the creation of this model, but it can be requested from the links above.  **
 
 I used a similar pipeline as the ja_core_news_lg model, using the "tok2vec","morphologizer","parser", and "ner" components as annotations for categorization. 
 ## Limitations
