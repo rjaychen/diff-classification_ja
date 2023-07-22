@@ -152,3 +152,5 @@ Enter in your search prompt:
 血液型A型。既婚。三児の父親。弟は元WBC世界バンタム級暫定王者、現WBA世界バンタム級王者の井上拓真。姉もいる。従兄にプロボクサーの井上浩樹。父親の井上真吾は元アマチュアボクサーの実業家で、大橋ボクシングジム所属のプロボクシングトレーナーとして2人の我が子と甥である浩樹の担当トレーナーも務めている。
 {'easy': 0.012185882776975632, 'medium': 0.5864529013633728, 'advanced': 0.4490154981613159}
 ```
+## References
+K. Sakoda (2020). I-JAS tanjo no keii. [The background of compilation of I-JAS]. In K. Sakoda, S. Ishikawa, & J. Lee (Eds.), Nihongo gakushusha kopasu I-JAS nyumon: Kenkyu kyoiku ni do tsukauka [Introduction to the I-JAS: Application for research and teaching](pp. 2-13).Kurosio Publishers
