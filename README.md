@@ -71,7 +71,7 @@ Let's source some unseen texts from [TADOKU](https://tadoku.org/japanese/en/free
 ```
 import spacy
 # Genki I style sentence
-easy_text = '私は学生です。四年生です。家に、犬が一匹います。料理するのがだいすきです。毎日朝ご飯を作って、食べって、学校に行きます。'
+easy_text = '私は学生です。四年生です。家に、犬が一匹います。'
 # Text - L1
 medium_text = '森の中に、うさぎの家族がいます。お母さんと、四匹の子うさぎです。'\
             '朝です。こどもたちは、そこであそびます。お母さんが言いました。'
@@ -101,7 +101,7 @@ print(advanced_doc.cats)
 Output:
 ```
 Introductory:
-{'easy': 0.19566690921783447, 'medium': 0.345109760761261, 'advanced': 0.24489924311637878}
+{'easy': 0.7296032309532166, 'medium': 0.1260347068309784, 'advanced': 0.14535404741764069}
 Medium:
 {'easy': 0.027298055589199066, 'medium': 0.6981500387191772, 'advanced': 0.19801360368728638}
 Hard:
