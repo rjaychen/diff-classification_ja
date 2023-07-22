@@ -1,0 +1,8 @@
+{
+  "labels":[
+    "easy",
+    "medium",
+    "advanced"
+  ],
+  "threshold":0.5
+}
