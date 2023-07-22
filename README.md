@@ -109,6 +109,7 @@ Advanced:
 {'easy': 0.01567140780389309, 'medium': 0.23157335817813873, 'advanced': 0.7423866391181946}
 ```
 ### Difficulty of Current News Topics using Web Scraping:
+First, the script grabs the top articles from Yahoo Japan:
 ```
 Article #0
 {'text': '来週また猛烈な暑さか 体温超えも', 'url': 'https://news.yahoo.co.jp/pickup/6470100', 'ents': ''}
@@ -128,6 +129,9 @@ Article #7
 {'text': 'まずい 欽ちゃん語る脳梗塞の経験', 'url': 'https://news.yahoo.co.jp/pickup/6470108', 'ents': '欽ちゃん'}
 Select an article to search:
 5
+```
+We then search wikipedia for any relevant topics recognized by the model:
+```
 Wiki Page #0
 井上
 Wiki Page #1
@@ -148,6 +152,9 @@ Wiki Page #8
 井上内親王
 Wiki Page #9
 井上堯之
+```
+Since none of these articles relate to the actual article, you can also enter in your own prompt:
+```
 Select a wikipedia page to categorize (-1 for your own search):
 -1
 Enter in your search prompt:
