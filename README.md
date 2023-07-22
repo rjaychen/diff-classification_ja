@@ -59,7 +59,7 @@ pip install spacy
 ```
 python -m spacy download "ja_core_news_lg"
 ```
-A requirements.txt is also provided for package installation. 
+A requirements.txt is also provided for package installation.  
 3. Train the model  
 ```
 python -m spacy train config.cfg --output ./output
