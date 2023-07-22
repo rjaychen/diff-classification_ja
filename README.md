@@ -50,7 +50,7 @@ E    #       LOSS TEXTC...  CATS_SCORE  SCORE
 The output of training with k-folds:
 ## Usage
 ### Training the Model
-You can download the spacy model used in training my model through the following steps:
+You can download the spacy model used in training my model through the following steps (A requirements.txt is also provided for package installation):
 1. Install spacy
 ```
 pip install spacy
@@ -58,8 +58,7 @@ pip install spacy
 2. Install the model
 ```
 python -m spacy download "ja_core_news_lg"
-```
-A requirements.txt is also provided for package installation.  
+``` 
 3. Train the model
 ```
 python -m spacy train config.cfg --output ./output
