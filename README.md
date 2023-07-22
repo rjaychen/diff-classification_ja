@@ -64,7 +64,6 @@ python -m spacy download "ja_core_news_lg"
 python -m spacy train config.cfg --output ./output
 ```
 Use either the train.py module to produce .spacy DocBin files for training purposes, or alternatively, run the k-fold algorithm.
-### Web Scraping
 ## Examples
 Let's source some unseen texts from [TADOKU](https://tadoku.org/japanese/en/free-books-en/), a website with free online japanese texts with difficulty ratings L1 - L5.  
 [[Text - L1]](https://tadoku.org/japanese/book/7348/) [[Text - L5]](https://tadoku.org/japanese/book/6238/) [[Text - IPSJ Article]](http://id.nii.ac.jp/1001/00017938/)
@@ -108,4 +107,53 @@ Hard:
 {'easy': 0.045824140310287476, 'medium': 0.39197373390197754, 'advanced': 0.502650797367096}
 Advanced:
 {'easy': 0.01567140780389309, 'medium': 0.23157335817813873, 'advanced': 0.7423866391181946}
+```
+### Difficulty of Current News Topics using Web Scraping:
+```
+Article #0
+{'text': '来週また猛烈な暑さか 体温超えも', 'url': 'https://news.yahoo.co.jp/pickup/6470100', 'ents': ''}
+Article #1
+{'text': 'ウ大統領 クリミア橋攻撃を示唆', 'url': 'https://news.yahoo.co.jp/pickup/6470104', 'ents': 'ウ 大統領 クリミア橋攻撃'}
+Article #2
+{'text': '3児溺れ死亡 泣いて眠れない子も', 'url': 'https://news.yahoo.co.jp/pickup/6470107', 'ents': '3児'}
+Article #3
+{'text': '女性殴られ死亡 傷害疑いで女逮捕', 'url': 'https://news.yahoo.co.jp/pickup/6470109', 'ents': ''}
+Article #4
+{'text': '「最悪の侵略的植物」 千葉で苦悩', 'url': 'https://news.yahoo.co.jp/pickup/6470106', 'ents': '最悪の侵略的植物 千葉'}
+Article #5
+{'text': '井上尚弥に相手陣営が「神経戦」', 'url': 'https://news.yahoo.co.jp/pickup/6470087', 'ents': '井上'}
+Article #6
+{'text': 'ロコ・藤沢五月 ムキムキ姿を披露', 'url': 'https://news.yahoo.co.jp/pickup/6470105', 'ents': ''}
+Article #7
+{'text': 'まずい 欽ちゃん語る脳梗塞の経験', 'url': 'https://news.yahoo.co.jp/pickup/6470108', 'ents': '欽ちゃん'}
+Select an article to search:
+5
+Wiki Page #0
+井上
+Wiki Page #1
+井上馨
+Wiki Page #2
+井上ひさし
+Wiki Page #3
+井上順
+Wiki Page #4
+井上大輔
+Wiki Page #5
+井上咲楽
+Wiki Page #6
+井上毅
+Wiki Page #7
+井上八千代
+Wiki Page #8
+井上内親王
+Wiki Page #9
+井上堯之
+Select a wikipedia page to categorize (-1 for your own search):
+-1
+Enter in your search prompt:
+井上尚弥
+井上 尚弥（いのうえ なおや、1993年〈平成5年〉4月10日）は、日本のプロボクサー。神奈川県座間市出身。大橋ボクシングジム所属。元WBC世界ライトフライ級王者。元WBO世界スーパーフライ級王者。元WBAスーパー・WBC・IBF・WBOスーパー世界バンタム級統一王者。世界3階級制覇王者。WBSSバンタム級王者。史上9人目、アジア人初の主要4団体統一王者。
+圧倒的実力と完璧なボクシングスタイルから『日本ボクシング史上最高傑作』と呼ばれており、世界で最も権威のあるアメリカのボクシング専門誌「ザ・リング」が格付けするパウンド・フォー・パウンドランキングにおいて、日本人として史上初めて1位の評価を受けた。アマチュア時代には日本ボクシング史上初めて高校生にして7つのタイトルを獲得し、プロ転向後も8戦目での2階級制覇、世界王座戦19連勝、世界王座戦17KO勝利、世界王座戦70秒での最短KO勝利、世界王座海外防衛4度など数多くの日本記録を樹立している。
+血液型A型。既婚。三児の父親。弟は元WBC世界バンタム級暫定王者、現WBA世界バンタム級王者の井上拓真。姉もいる。従兄にプロボクサーの井上浩樹。父親の井上真吾は元アマチュアボクサーの実業家で、大橋ボクシングジム所属のプロボクシングトレーナーとして2人の我が子と甥である浩樹の担当トレーナーも務めている。
+{'easy': 0.012185882776975632, 'medium': 0.5864529013633728, 'advanced': 0.4490154981613159}
 ```
