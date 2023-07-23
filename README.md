@@ -98,7 +98,7 @@ Hard:
 Advanced:
 {'easy': 0.01567140780389309, 'medium': 0.23157335817813873, 'advanced': 0.7423866391181946}
 ```
-### Difficulty of Current News Topics using Web Scraping:
+### Determine the Difficulty of Current News Topics using Web Scraping:
 First, the script grabs the top articles from Yahoo Japan:
 ```
 Article #0
